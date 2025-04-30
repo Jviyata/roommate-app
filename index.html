@@ -4,63 +4,11 @@
     <!-- Character Set and Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="RoomSync - The all-in-one app for roommates to coordinate shared spaces, manage guests, and send friendly reminders." />
-    <meta name="keywords" content="roommate app, shared living, co-living, room scheduler, guest management, roommate reminders" />
-    <meta name="author" content="Viyata" />
-
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="RoomSync | Coordinate Shared Living" />
-    <meta property="og:description" content="Make shared living more organized and less stressful with RoomSync - coordinate spaces, manage guests, and send reminders." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://roomsync.app" />
-    <meta property="og:image" content="/images/roomsync-social.jpg" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" />
-
-    <!-- Theme Color (Green) -->
-    <meta name="theme-color" content="#22c55e" />
-
-    <!-- Stylesheets -->
-    <link rel="preload" href="/src/styles/main.css" as="style" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
-
-    <!-- Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Page Title -->
-    <title>RoomSync | Coordinate Shared Living</title>
+    <!-- Include the correct script for your dashboard -->
+    <script type="module" src="/src/dashboard.jsx"></script>
   </head>
-  <body style="background-color: #f0fdf4; color: #14532d; font-family: 'Inter', sans-serif;">
-    <!-- Main content container -->
+  <body>
+    <!-- Content goes here -->
     <div id="root"></div>
-
-    <!-- JavaScript Required Message -->
-    <noscript>
-      <div style="padding: 2rem; text-align: center;">
-        <h1>JavaScript Required</h1>
-        <p>RoomSync requires JavaScript to coordinate your shared living space. Please enable JavaScript to continue.</p>
-      </div>
-    </noscript>
-
-    <!-- Main application script -->
-    <script type="module" src="/src/main.jsx"></script>
-
-    <!-- Optional: Service worker registration -->
-    <!--
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('ServiceWorker registered'))
-            .catch(err => console.log('ServiceWorker registration failed', err));
-        });
-      }
-    </script>
-    -->
   </body>
 </html>
